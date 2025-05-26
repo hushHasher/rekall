@@ -1,0 +1,241 @@
+.booking {
+  padding: 2rem 0 5rem;
+}
+
+.booking-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.booking-form {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 3rem;
+}
+
+.form-section {
+  margin-bottom: 2.5rem;
+}
+
+.form-section h3 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: var(--text-light);
+  font-family: 'Orbitron', monospace;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(0, 255, 255, 0.3);
+  color: var(--text-light);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  background: rgba(0, 255, 255, 0.05);
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: var(--text-gray);
+  opacity: 0.7;
+}
+
+.form-select {
+  cursor: pointer;
+}
+
+.form-select option {
+  background: var(--bg-dark);
+  color: var(--text-light);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.disclaimer {
+  background: rgba(255, 107, 53, 0.1);
+  border: 1px solid var(--secondary-color);
+  padding: 1.5rem;
+  border-radius: 4px;
+}
+
+.disclaimer p {
+  color: var(--text-gray);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.disclaimer strong {
+  color: var(--secondary-color);
+}
+
+.submit-button {
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  background: var(--primary-color);
+  color: var(--bg-darker);
+  border-color: var(--primary-color);
+}
+
+.submit-button:hover {
+  background: var(--bg-darker);
+  color: var(--primary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.4);
+}
+
+/* Success Page */
+.booking-success {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-content {
+  text-align: center;
+  padding: 4rem;
+  background: rgba(0, 0, 0, 0.9);
+  max-width: 600px;
+  position: relative;
+}
+
+.success-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: var(--success-color);
+}
+
+.success-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.success-animation {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 2rem auto;
+}
+
+.pulse-ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30px;
+  height: 30px;
+  border: 3px solid var(--success-color);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+
+.pulse-ring:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.pulse-ring:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .booking-form {
+    padding: 2rem 1.5rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .success-content {
+    padding: 2rem;
+    margin: 1rem;
+  }
+
+  .success-content h1 {
+    font-size: 2rem;
+  }
+
+  .success-content p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking {
+    padding: 1rem 0 3rem;
+  }
+
+  .booking-form {
+    padding: 1.5rem 1rem;
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    padding: 0.8rem;
+  }
+
+  .submit-button {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,92 @@
+.glitch-toggle-container {
+  position: fixed;
+  top: 100px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.glitch-toggle {
+  background: rgba(0, 0, 0, 0.8);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 15px;
+  font-family: 'Orbitron', monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 0;
+  backdrop-filter: blur(10px);
+}
+
+.glitch-toggle:hover {
+  background: var(--primary-color);
+  color: var(--bg-darker);
+  box-shadow: 0 0 20px var(--primary-color);
+  transform: translateY(-2px);
+}
+
+.glitch-toggle.active {
+  background: var(--secondary-color);
+  border-color: var(--secondary-color);
+  color: var(--bg-darker);
+  animation: glitch-button 0.5s infinite;
+  box-shadow: 
+    0 0 20px var(--secondary-color),
+    inset 0 0 20px rgba(255, 107, 53, 0.3);
+}
+
+.glitch-toggle.active .toggle-icon {
+  animation: icon-glitch 0.3s infinite;
+}
+
+.toggle-icon {
+  font-size: 1.2rem;
+  filter: drop-shadow(0 0 5px currentColor);
+}
+
+.toggle-text {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+}
+
+@keyframes glitch-button {
+  0%, 100% { transform: translate(0); }
+  10% { transform: translate(-1px, -1px); }
+  20% { transform: translate(1px, 1px); }
+  30% { transform: translate(-1px, 1px); }
+  40% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, -1px); }
+  60% { transform: translate(1px, 1px); }
+  70% { transform: translate(-1px, 1px); }
+  80% { transform: translate(1px, -1px); }
+  90% { transform: translate(-1px, -1px); }
+}
+
+@keyframes icon-glitch {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  25% { transform: scale(1.2) rotate(5deg); }
+  50% { transform: scale(0.8) rotate(-5deg); }
+  75% { transform: scale(1.1) rotate(3deg); }
+}
+
+@media (max-width: 768px) {
+  .glitch-toggle-container {
+    top: 80px;
+    right: 10px;
+  }
+  
+  .glitch-toggle {
+    padding: 8px 12px;
+    font-size: 0.7rem;
+  }
+  
+  .toggle-text {
+    display: none;
+  }
+} 
