@@ -8,89 +8,89 @@ const Services = () => {
       id: 1,
       title: "Secret Agent",
       duration: "2 weeks",
-      price: "₹15,000",
-      description: "Live the life of an international spy with dangerous missions, exotic locations, and cutting-edge gadgets.",
+      price: "$7,999",
+      description: "Live the ultimate spy fantasy with dangerous missions, exotic locations, and sophisticated gadgets. Our most popular package.",
       features: [
-        "High-stakes missions",
+        "International espionage missions",
         "Advanced combat training memories",
-        "Exotic international locations",
-        "State-of-the-art spy gadgets",
-        "Romantic encounters"
+        "Exotic locations worldwide",
+        "High-tech spy equipment",
+        "Beautiful women and dangerous encounters"
       ],
       popular: true
     },
     {
       id: 2,
       title: "Mars Vacation",
-      duration: "1 week",
-      price: "₹12,000",
-      description: "Experience the red planet like never before. Explore Martian landscapes and futuristic colonies.",
+      duration: "2 weeks",
+      price: "$8,999",
+      description: "Experience the red planet like a true colonist. Explore the Martian landscape and underground cities of Venusville.",
       features: [
-        "Martian landscape exploration",
-        "Zero gravity experiences",
-        "Futuristic colony life",
+        "Mars colony exploration",
+        "Venusville red-light district",
+        "Martian mining operations",
         "Alien artifact discoveries",
-        "Space travel memories"
+        "Low gravity adventures"
       ],
-      popular: false
+      popular: true
     },
     {
       id: 3,
-      title: "Celebrity Lifestyle",
-      duration: "1 month",
-      price: "₹25,000",
-      description: "Live as a world-famous celebrity with all the glamour, fame, and luxury you've ever dreamed of.",
+      title: "Ego Trip",
+      duration: "1 week",
+      price: "$5,999",
+      description: "Be the most important person in the world. Experience fame, power, and adoration in this ultimate ego-boosting package.",
       features: [
-        "Red carpet events",
+        "Celebrity status",
+        "Worldwide recognition",
         "Luxury lifestyle",
         "Adoring fans",
-        "Private jets and yachts",
-        "Award ceremonies"
+        "VIP treatment everywhere"
       ],
       popular: false
     },
     {
       id: 4,
-      title: "Historical Adventure",
-      duration: "3 weeks",
-      price: "₹18,000",
-      description: "Travel back in time and experience pivotal moments in history as if you were really there.",
+      title: "Alien Encounter",
+      duration: "1 week",
+      price: "$6,999",
+      description: "Make first contact with extraterrestrial life. Experience the wonder and terror of meeting beings from another world.",
       features: [
-        "Ancient civilizations",
-        "Historical battles",
-        "Meet famous figures",
-        "Cultural immersion",
-        "Archaeological discoveries"
+        "First contact scenarios",
+        "Alien technology",
+        "Interstellar travel",
+        "Telepathic communication",
+        "Cosmic revelations"
       ],
       popular: false
     },
     {
       id: 5,
-      title: "Superhero Experience",
-      duration: "10 days",
-      price: "₹20,000",
-      description: "Gain superpowers and save the world as your favorite superhero in this action-packed adventure.",
+      title: "Demure Housewife",
+      duration: "1 week",
+      price: "$4,999",
+      description: "Experience the simple pleasures of domestic life. Perfect for those seeking peace and traditional family values.",
       features: [
-        "Superhuman abilities",
-        "Save the world missions",
-        "Epic battles",
-        "Secret identity",
-        "Heroic recognition"
+        "Suburban lifestyle",
+        "Family harmony",
+        "Domestic bliss",
+        "Community involvement",
+        "Simple pleasures"
       ],
-      popular: true
+      popular: false
     },
     {
       id: 6,
-      title: "Luxury Retreat",
+      title: "Sports Hero",
       duration: "2 weeks",
-      price: "₹10,000",
-      description: "Relax and unwind in the most luxurious resorts and spas across the galaxy.",
+      price: "$7,499",
+      description: "Live the dream of athletic greatness. Experience championship victories and the roar of the crowd.",
       features: [
-        "5-star accommodations",
-        "Spa treatments",
-        "Gourmet dining",
-        "Private beaches",
-        "Personal butler service"
+        "Championship victories",
+        "Athletic excellence",
+        "Stadium crowds",
+        "Media attention",
+        "Sports immortality"
       ],
       popular: false
     }
@@ -100,12 +100,12 @@ const Services = () => {
     <div className="services">
       <div className="container">
         <div className="services-header fade-in">
-          <h1 className="page-title glow-text glitch" data-text="OUR SERVICES">
-            OUR SERVICES
+          <h1 className="page-title glow-text glitch" data-text="REKALL MEMORY PACKAGES">
+            REKALL MEMORY PACKAGES
           </h1>
           <p className="page-subtitle">
-            Choose from our premium collection of memory experiences. Each package is carefully crafted 
-            to provide the most authentic and thrilling adventures possible.
+            Choose from our carefully crafted memory experiences. Each package provides authentic memories 
+            that are indistinguishable from reality. Why settle for the life you have when you can have the life you want?
           </p>
         </div>
 
@@ -127,7 +127,7 @@ const Services = () => {
                 ))}
               </ul>
               <Link to="/booking" className="retro-button service-button">
-                Book This Experience
+                Book This Memory
               </Link>
             </div>
           ))}
@@ -135,34 +135,34 @@ const Services = () => {
 
         <div className="services-info">
           <div className="info-section neon-border">
-            <h3>How It Works</h3>
+            <h3>The Rekall Process</h3>
             <div className="steps">
               <div className="step">
                 <div className="step-number">01</div>
                 <div className="step-content">
                   <h4>Consultation</h4>
-                  <p>Meet with our memory specialists to discuss your desired experience and customize details.</p>
+                  <p>Meet with Dr. Edgemar to discuss your desired memory experience and customize every detail.</p>
                 </div>
               </div>
               <div className="step">
                 <div className="step-number">02</div>
                 <div className="step-content">
-                  <h4>Preparation</h4>
-                  <p>Our technicians prepare the memory implant based on your specifications and preferences.</p>
+                  <h4>Neural Mapping</h4>
+                  <p>Our technicians map your brain's memory centers using advanced scanning technology.</p>
                 </div>
               </div>
               <div className="step">
                 <div className="step-number">03</div>
                 <div className="step-content">
-                  <h4>Implantation</h4>
-                  <p>The memory is safely implanted using our advanced neural interface technology.</p>
+                  <h4>Memory Implantation</h4>
+                  <p>The artificial memories are carefully implanted using our proprietary neural interface.</p>
                 </div>
               </div>
               <div className="step">
                 <div className="step-number">04</div>
                 <div className="step-content">
-                  <h4>Experience</h4>
-                  <p>Wake up with vivid memories of your chosen adventure, indistinguishable from reality.</p>
+                  <h4>Integration</h4>
+                  <p>Wake up with vivid memories of your adventure, completely integrated with your existing memories.</p>
                 </div>
               </div>
             </div>
@@ -171,11 +171,12 @@ const Services = () => {
           <div className="safety-info neon-border">
             <h3>Safety & Guarantees</h3>
             <ul>
-              <li>✓ 99.9% success rate with zero permanent side effects</li>
-              <li>✓ FDA-approved neural interface technology</li>
-              <li>✓ 24/7 medical monitoring during procedures</li>
-              <li>✓ Full memory integration guarantee</li>
-              <li>✓ Optional memory removal service available</li>
+              <li>✓ Completely safe procedure with no side effects</li>
+              <li>✓ Memories are indistinguishable from reality</li>
+              <li>✓ 24/7 monitoring during the procedure</li>
+              <li>✓ Full satisfaction guarantee</li>
+              <li>✓ Experienced medical staff led by Dr. Edgemar</li>
+              <li>✓ State-of-the-art facility with the latest technology</li>
             </ul>
           </div>
         </div>

@@ -5,27 +5,27 @@ const About = () => {
   const teamMembers = [
     {
       name: "Dr. Edgemar",
-      position: "Chief Memory Architect",
-      bio: "Pioneer in neural interface technology with over 20 years of experience in memory manipulation and consciousness research.",
-      specialization: "Memory Implantation"
+      position: "Chief Psychiatrist & Founder",
+      bio: "Leading expert in memory implantation technology and the founder of Rekall Corporation. Dr. Edgemar has revolutionized the field of artificial memory creation.",
+      specialization: "Memory Architecture"
     },
     {
       name: "Dr. Lull",
-      position: "Director of Operations",
-      bio: "Former neurosurgeon turned memory specialist, ensuring the highest safety standards in all procedures.",
-      specialization: "Neural Safety"
+      position: "Chief Technician",
+      bio: "Head of technical operations, Dr. Lull oversees all memory implantation procedures and ensures the highest quality standards.",
+      specialization: "Neural Interface Technology"
     },
     {
       name: "McClane",
-      position: "Experience Designer",
-      bio: "Creative director responsible for crafting immersive and believable memory experiences across all service categories.",
-      specialization: "Experience Crafting"
+      position: "Memory Specialist",
+      bio: "Senior memory specialist responsible for crafting detailed and believable memory experiences for our clients.",
+      specialization: "Experience Design"
     },
     {
-      name: "Quaid",
-      position: "Quality Assurance",
-      bio: "Former test subject turned quality controller, ensuring every memory implant meets our exacting standards.",
-      specialization: "Memory Validation"
+      name: "Nurse",
+      position: "Medical Supervisor",
+      bio: "Experienced medical professional who monitors all procedures and ensures client safety throughout the memory implantation process.",
+      specialization: "Medical Safety"
     }
   ]
 
@@ -37,7 +37,7 @@ const About = () => {
             ABOUT REKALL
           </h1>
           <p className="page-subtitle">
-            Leading the future of human experience through advanced memory implantation technology.
+            "We can remember it for you wholesale" - The leader in memory implantation technology.
           </p>
         </div>
 
@@ -46,20 +46,21 @@ const About = () => {
             <h2 className="section-title glow-text">Our Story</h2>
             <div className="story-text">
               <p>
-                Founded in 2084, Rekall Corporation emerged from the visionary work of Dr. Edgemar and his team 
-                of neuroscientists who believed that human experience shouldn't be limited by physical, financial, 
-                or temporal constraints. What started as a small research facility has grown into the galaxy's 
-                premier memory implantation service.
+                Founded in the early 21st century, Rekall Corporation emerged from groundbreaking research 
+                in neural science and memory manipulation. Under the visionary leadership of Dr. Edgemar, 
+                we have perfected the art of creating artificial memories that are completely indistinguishable 
+                from real experiences.
               </p>
               <p>
-                Our breakthrough came with the development of the Neural Interface Matrix (NIM), a revolutionary 
-                technology that allows us to seamlessly integrate artificial memories into the human consciousness. 
-                These memories are so detailed and authentic that they become indistinguishable from real experiences.
+                Our revolutionary technology allows us to implant detailed, vivid memories directly into the 
+                human brain. These memories include not just visual and auditory experiences, but complete 
+                sensory data, emotions, and even muscle memory. The result is a perfect artificial experience 
+                that feels absolutely real.
               </p>
               <p>
-                Today, Rekall serves thousands of clients across the solar system, from Mars colonies to Earth's 
-                megacities, providing them with the experiences they've always dreamed of but never had the 
-                opportunity to live.
+                Today, Rekall serves clients worldwide who want to experience adventures they could never 
+                have in real life. From exotic vacations to dangerous missions, we make the impossible possible 
+                through the power of artificial memory.
               </p>
             </div>
           </div>
@@ -70,34 +71,34 @@ const About = () => {
           <div className="tech-grid">
             <div className="tech-card neon-border">
               <div className="tech-icon">🧠</div>
-              <h3>Neural Interface Matrix</h3>
+              <h3>Neural Implantation</h3>
               <p>
-                Our proprietary NIM technology creates a direct interface with the brain's memory centers, 
-                allowing for precise implantation of complex memory structures.
+                Our proprietary neural implantation technology creates direct pathways to the brain's 
+                memory centers, allowing for precise insertion of artificial memories.
               </p>
             </div>
             <div className="tech-card neon-border">
               <div className="tech-icon">⚡</div>
-              <h3>Quantum Memory Processing</h3>
+              <h3>Memory Synthesis</h3>
               <p>
-                Advanced quantum computers generate incredibly detailed memory experiences with full 
+                Advanced computer systems generate incredibly detailed memory experiences with full 
                 sensory data, emotional responses, and contextual information.
               </p>
             </div>
             <div className="tech-card neon-border">
               <div className="tech-icon">🔬</div>
-              <h3>Synaptic Integration</h3>
+              <h3>Brain Mapping</h3>
               <p>
-                Our patented synaptic integration process ensures that implanted memories form natural 
-                connections with existing neural pathways.
+                Sophisticated scanning technology maps each client's unique neural pathways to ensure 
+                perfect integration of artificial memories.
               </p>
             </div>
             <div className="tech-card neon-border">
               <div className="tech-icon">🛡️</div>
-              <h3>Memory Validation</h3>
+              <h3>Safety Protocols</h3>
               <p>
-                Every memory undergoes rigorous testing to ensure authenticity, consistency, and 
-                psychological safety before implantation.
+                Comprehensive safety measures and monitoring systems ensure that every procedure is 
+                completely safe with no risk of side effects.
               </p>
             </div>
           </div>
@@ -131,11 +132,12 @@ const About = () => {
             <h2 className="section-title glow-text">Our Mission</h2>
             <div className="mission-text">
               <blockquote>
-                "To democratize human experience by making any adventure, any life, any dream accessible 
-                to everyone, regardless of their circumstances. We believe that memories shape who we are, 
-                and everyone deserves to have the memories they desire."
+                "At Rekall, we believe that everyone deserves to live their dreams. Our advanced memory 
+                implantation technology makes it possible to experience any adventure, any lifestyle, 
+                any fantasy - all without leaving our facility. Why settle for the mundane when you 
+                can have the extraordinary?"
               </blockquote>
-              <cite>- Dr. Edgemar, Founder & CEO</cite>
+              <cite>- Dr. Edgemar, Founder & Chief Psychiatrist</cite>
             </div>
           </div>
         </section>
@@ -144,47 +146,47 @@ const About = () => {
           <h2 className="section-title glow-text">By The Numbers</h2>
           <div className="stats-grid">
             <div className="stat-card">
-              <div className="stat-number glow-text">50,000+</div>
+              <div className="stat-number glow-text">10,000+</div>
               <div className="stat-label">Successful Procedures</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number glow-text">99.9%</div>
-              <div className="stat-label">Success Rate</div>
+              <div className="stat-number glow-text">100%</div>
+              <div className="stat-label">Client Satisfaction</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number glow-text">15</div>
-              <div className="stat-label">Years of Experience</div>
+              <div className="stat-number glow-text">25+</div>
+              <div className="stat-label">Years of Research</div>
             </div>
             <div className="stat-card">
-              <div className="stat-number glow-text">200+</div>
-              <div className="stat-label">Experience Categories</div>
+              <div className="stat-number glow-text">50+</div>
+              <div className="stat-label">Memory Packages</div>
             </div>
           </div>
         </section>
 
         <section className="certifications">
-          <h2 className="section-title glow-text">Certifications & Safety</h2>
+          <h2 className="section-title glow-text">Safety & Credentials</h2>
           <div className="cert-content">
             <div className="cert-list">
               <div className="cert-item">
                 <span className="cert-badge">✓</span>
-                <span>FDA Approved Neural Interface Technology</span>
+                <span>Licensed Medical Facility</span>
               </div>
               <div className="cert-item">
                 <span className="cert-badge">✓</span>
-                <span>ISO 9001:2084 Quality Management Certification</span>
+                <span>Board Certified Psychiatrists</span>
               </div>
               <div className="cert-item">
                 <span className="cert-badge">✓</span>
-                <span>Galactic Medical Council Accreditation</span>
+                <span>Advanced Neural Technology</span>
               </div>
               <div className="cert-item">
                 <span className="cert-badge">✓</span>
-                <span>Neural Safety Institute Compliance</span>
+                <span>Comprehensive Insurance Coverage</span>
               </div>
               <div className="cert-item">
                 <span className="cert-badge">✓</span>
-                <span>Memory Ethics Board Approval</span>
+                <span>24/7 Medical Monitoring</span>
               </div>
             </div>
           </div>

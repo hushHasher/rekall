@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap');
 
 :root {
-  --primary-color: #00ffff;
-  --secondary-color: #ff6b35;
+  --primary-color: #ff0040;
+  --secondary-color: #00d4ff;
   --accent-color: #ffff00;
-  --bg-dark: #0a0a0a;
-  --bg-darker: #000000;
+  --bg-dark: #1a1a2e;
+  --bg-darker: #16213e;
   --text-light: #ffffff;
   --text-gray: #cccccc;
-  --border-glow: #00ffff;
+  --border-glow: #ff0040;
   --error-color: #ff3333;
   --success-color: #00ff00;
+  --mars-red: #cd5c5c;
+  --neon-blue: #00d4ff;
 }
 
 * {
@@ -35,9 +37,9 @@ body::before {
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(0, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(255, 255, 0, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(255, 0, 64, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(205, 92, 92, 0.05) 0%, transparent 50%);
   pointer-events: none;
   z-index: -1;
 }
@@ -57,7 +59,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 2px solid var(--primary-color);
   box-shadow: 
     0 0 10px var(--primary-color),
-    inset 0 0 10px rgba(0, 255, 255, 0.1);
+    inset 0 0 10px rgba(255, 0, 64, 0.1);
 }
 
 .scanlines::before {
@@ -71,8 +73,8 @@ h1, h2, h3, h4, h5, h6 {
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 255, 255, 0.03) 2px,
-    rgba(0, 255, 255, 0.03) 4px
+    rgba(255, 0, 64, 0.03) 2px,
+    rgba(255, 0, 64, 0.03) 4px
   );
   pointer-events: none;
 }

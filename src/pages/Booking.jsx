@@ -19,12 +19,12 @@ const Booking = () => {
   const [isSubmitted, setIsSubmitted] = useState(false)
 
   const services = [
-    { value: 'secret-agent', label: 'Secret Agent - ₹15,000' },
-    { value: 'mars-vacation', label: 'Mars Vacation - ₹12,000' },
-    { value: 'celebrity-lifestyle', label: 'Celebrity Lifestyle - ₹25,000' },
-    { value: 'historical-adventure', label: 'Historical Adventure - ₹18,000' },
-    { value: 'superhero-experience', label: 'Superhero Experience - ₹20,000' },
-    { value: 'luxury-retreat', label: 'Luxury Retreat - ₹10,000' }
+    { value: 'secret-agent', label: 'Secret Agent - $7,999' },
+    { value: 'mars-vacation', label: 'Mars Vacation - $8,999' },
+    { value: 'ego-trip', label: 'Ego Trip - $5,999' },
+    { value: 'alien-encounter', label: 'Alien Encounter - $6,999' },
+    { value: 'demure-housewife', label: 'Demure Housewife - $4,999' },
+    { value: 'sports-hero', label: 'Sports Hero - $7,499' }
   ]
 
   const timeSlots = [
@@ -71,9 +71,9 @@ const Booking = () => {
         <div className="container">
           <div className="booking-success fade-in">
             <div className="success-content neon-border">
-              <h1 className="glow-text">Booking Confirmed!</h1>
+              <h1 className="glow-text">Memory Session Scheduled!</h1>
               <p>Thank you for choosing Rekall. Your memory implantation session has been scheduled.</p>
-              <p>You will receive a confirmation email shortly with detailed instructions.</p>
+              <p>Dr. Edgemar and our team will contact you within 24 hours to confirm your appointment.</p>
               <div className="success-animation">
                 <div className="pulse-ring"></div>
                 <div className="pulse-ring"></div>
@@ -90,12 +90,12 @@ const Booking = () => {
     <div className="booking">
       <div className="container">
         <div className="booking-header fade-in">
-          <h1 className="page-title glow-text glitch" data-text="BOOK YOUR EXPERIENCE">
-            BOOK YOUR EXPERIENCE
+          <h1 className="page-title glow-text glitch" data-text="BOOK YOUR MEMORY">
+            BOOK YOUR MEMORY
           </h1>
           <p className="page-subtitle">
             Ready to live your dreams? Fill out the form below to schedule your memory implantation session.
-            Our specialists will contact you within 24 hours to confirm your appointment.
+            Our specialists will contact you within 24 hours to confirm your appointment and discuss the details.
           </p>
         </div>
 
@@ -158,9 +158,9 @@ const Booking = () => {
           </div>
 
           <div className="form-section">
-            <h3>Experience Selection</h3>
+            <h3>Memory Package Selection</h3>
             <div className="form-group">
-              <label htmlFor="service">Choose Your Experience *</label>
+              <label htmlFor="service">Choose Your Memory Package *</label>
               <select
                 id="service"
                 name="service"
@@ -169,7 +169,7 @@ const Booking = () => {
                 required
                 className="form-select"
               >
-                <option value="">Select an experience...</option>
+                <option value="">Select a memory package...</option>
                 {services.map(service => (
                   <option key={service.value} value={service.value}>
                     {service.label}
@@ -227,7 +227,7 @@ const Booking = () => {
             </div>
 
             <div className="form-group">
-              <label htmlFor="medicalHistory">Relevant Medical History</label>
+              <label htmlFor="medicalHistory">Medical History & Conditions</label>
               <textarea
                 id="medicalHistory"
                 name="medicalHistory"
@@ -235,7 +235,7 @@ const Booking = () => {
                 onChange={handleChange}
                 className="form-textarea"
                 rows="3"
-                placeholder="Please list any medical conditions, medications, or allergies..."
+                placeholder="Please list any medical conditions, medications, or previous psychiatric treatment..."
               />
             </div>
 
@@ -271,15 +271,16 @@ const Booking = () => {
             <div className="disclaimer">
               <p>
                 <strong>Important:</strong> By submitting this form, you acknowledge that you understand 
-                the risks and benefits of memory implantation technology. You confirm that all information 
+                the nature of memory implantation technology. You confirm that all information 
                 provided is accurate and complete. Rekall Corporation is not responsible for any 
-                psychological effects that may occur as a result of conflicting memories.
+                psychological effects that may occur as a result of artificial memory integration.
+                Please consult with Dr. Edgemar if you have any concerns about the procedure.
               </p>
             </div>
           </div>
 
           <button type="submit" className="retro-button submit-button">
-            Schedule My Experience
+            Schedule My Memory Session
           </button>
         </form>
       </div>
